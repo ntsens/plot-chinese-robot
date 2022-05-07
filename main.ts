@@ -89,6 +89,9 @@ robotWrite(arr6)
 robotWrite(arr7)
 robotWrite(arr8)
 robotWrite(arr9)
+
+// 归位
+writingrobot.moveXYZ(x_offset, y_offset, 0)
 writingrobot.autoHome()
 basic.forever(function () {
 	
