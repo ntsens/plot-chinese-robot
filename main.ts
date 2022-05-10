@@ -62,6 +62,7 @@ let arr9 = [
 ]
 let x_offset = 100
 let y_offset = 100
+let z_offset = -42
 function robotWrite(arr: number[][]) {
     let x: number;
     let y: number;
@@ -72,7 +73,7 @@ function robotWrite(arr: number[][]) {
         x = x + x_offset
         y = y + y_offset
         basic.pause(400)
-        writingrobot.moveXYZunblock(x, y, -34)
+        writingrobot.moveXYZunblock(x, y, z_offset)
     }
     // 抬笔
     writingrobot.moveXYZ(x, y, 0)
